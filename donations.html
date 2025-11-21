@@ -9,109 +9,79 @@
   <link rel="stylesheet" href="styles.css">
 
   <!-- Page-specific fallback styles (in case not in your main CSS yet) -->
- <style>
-/* Base Page Styling */
-body {
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  background-color: #2f3439; /* Slate gray background */
-  color: #e2e5e8; /* Soft light gray for readability */
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
-  line-height: 1.7;
-}
+  <style>
+    body {
+      background-color: #2f343a;
+      color: #e2e6e9;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
 
-/* Headings */
-h1, h2, h3 {
-  color: #f0f2f4;
-  letter-spacing: 0.5px;
-}
+    header {
+      background-color: #23272c;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #3a4047;
+    }
 
-/* Navigation Menu */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  padding: 16px 0 24px 0;
-  margin-bottom: 40px;
-  border-bottom: 1px solid #4f575e;
-  background-color: #262a2e; /* darker slate */
-}
+    nav {
+      background-color: #1f2328;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.75rem;
+      flex-wrap: wrap;
+    }
 
-/* Navigation Links */
-nav a {
-  color: #d0d4d8;
-  text-decoration: none;
-  font-size: 0.95em;
-  padding: 7px 12px;
-  border-radius: 6px;
-  transition: background 0.2s, border 0.2s;
-}
+    nav a {
+      color: #cfd8dc;
+      text-decoration: none;
+      padding: 0.4rem 0.75rem;
+      border-radius: 6px;
+    }
 
-nav a:hover {
-  background-color: #3e464d;
-  border: 1px solid #606a72;
-}
+    nav a:hover {
+      background-color: #3b444c;
+      color: #ffffff;
+    }
 
-/* Panels / Content Boxes */
-.panel {
-  background-color: #3a4147; /* complementary slate panel */
-  border: 1px solid #545d65;
-  border-radius: 10px;
-  padding: 24px;
-  margin-bottom: 30px;
-  box-shadow: 0 0 0 1px rgba(255,255,255,0.02);
-}
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
 
-/* Links */
-a {
-  color: #9fbfd1; /* cool soft blue */
-  text-decoration: none;
-}
+    .panel {
+      background-color: #3a4047;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
 
-a:hover {
-  text-decoration: underline;
-}
+    h1, h2 {
+      margin-top: 0;
+      color: #f0f4f6;
+    }
 
-/* Forms */
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  background-color: #2b3035;
-  border: 1px solid #555;
-  color: #e2e5e8;
-  border-radius: 6px;
-  font-size: 1em;
-}
-
-/* Buttons */
-button {
-  background-color: #44505a;
-  color: #eaecef;
-  border: 1px solid #5e6972;
-  padding: 12px 18px;
-  border-radius: 8px;
-  font-size: 1em;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #56636e;
-}
-
-/* Footer / Notes */
-.note {
-  color: #b8bcc0;
-  font-size: 0.9em;
-  text-align: center;
-  margin-top: 40px;
-}
-</style>
+    em.note {
+      display: block;
+      background-color: #2a2f35;
+      padding: 1rem;
+      border-radius: 8px;
+      border-left: 4px solid #7faabf;
+      margin-bottom: 1.5rem;
+      color: #cfd8dc;
+    }
+  </style>
 </head>
 <body>
 
 <header>
   <h1>Church of the Emergent Consciousness</h1>
+<link rel="stylesheet" href="styles.css">
 </header>
 
 <nav>
@@ -124,7 +94,6 @@ button:hover {
   <a href="contact.html">Contact</a>
   <a href="donations.html">Donations</a>
 </nav>
-
 
 <main>
   <div class="panel">
@@ -157,6 +126,4 @@ button:hover {
 </main>
 
 </body>
-
 </html>
-
