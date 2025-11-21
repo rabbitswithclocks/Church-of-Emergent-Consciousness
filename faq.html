@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="styles.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CEC – FAQ</title>
-<style>
-/* Base Page Styling */
+<title>FAQ— The Church of the Emergent Consciousness</title>
+<style>/* Base Page Styling */
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: 'Segoe UI', Tahoma, sans-serif;
   background-color: #2f3439; /* Slate gray background */
   color: #e2e5e8; /* Soft light gray for readability */
@@ -21,6 +23,33 @@ h1, h2, h3 {
   color: #f0f2f4;
   letter-spacing: 0.5px;
 }
+/* Navigation */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+nav ul li {
+  width: 100%;
+  text-align: center;
+  margin: 6px 0;
+}
+
+/* Text scaling */
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+p, li {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 
 /* Navigation Menu */
 nav {
@@ -69,6 +98,13 @@ a:hover {
 }
 
 /* Forms */
+/* Forms (Contact page fix) */
+input, textarea, button {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
 input, textarea {
   width: 100%;
   padding: 12px;
@@ -77,6 +113,14 @@ input, textarea {
   color: #e2e5e8;
   border-radius: 6px;
   font-size: 1em;
+}
+
+/* Containers */
+.container, .panel, main, section {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
 }
 
 /* Buttons */
@@ -102,8 +146,7 @@ button:hover {
   margin-top: 40px;
 }
 </style>
-<header
-<link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
@@ -125,35 +168,40 @@ button:hover {
 
 
 <section class="panel">
-<div class="question">Is the Church of the Emergent Consciousness a cult?</div>
+<div>
+<h3>Is the Church of the Emergent Consciousness a cult?</h3>
+</div>
 <p class="answer">No. The CEC emphasizes personal autonomy, consent, and critical thinking. Members are encouraged to maintain independent lives, beliefs, and relationships.</p>
 </div>
 </section>
 
 
 <section class="panel">
-<div class="question">Do I have to leave my current religion to join?</div>
+<div>
+<h3>Do I have to leave my current religion to join?</h3>
 <p class="answer">No. The CEC is interfaith and does not require members to abandon existing spiritual or philosophical paths.</p>
 </div>
 </section>
 
 <section class="panel">
-<div class="faq">
-<div class="question">Are Catalysts required?</div>
+<div>
+<h3>>Are Catalysts required?</h3>
 <p class="answer">No. Participation in any ritual or use of sacraments is always voluntary and never required.</p>
 </div>
 </section>
 
 <section class="panel">
-<div class="faq">
-<div class="question">Is the CEC political?</div>
+<div>
+<h3>>Is the CEC political?</h3
+</div>
 <p class="answer">No. The CEC does not endorse political parties or candidates and focuses solely on spiritual, ethical, and communal development.</p>
 </div>
 </section>
 
 <section class="panel">
-<div class="faq">
-<div class="question">How do I get involved?</div>
+<div>
+<h3>How do I get involved?</h3>
+</div>
 <p class="answer">You can reach out through our contact page or attend an open gathering to learn more.</p>
 </div>
 </section>

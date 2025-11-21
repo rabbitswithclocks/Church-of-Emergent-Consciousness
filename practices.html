@@ -1,7 +1,16 @@
 <!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practices — The Church of the Emergent Consciousness</title>
+
+
 <style>
 /* Base Page Styling */
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: 'Segoe UI', Tahoma, sans-serif;
   background-color: #2f3439; /* Slate gray background */
   color: #e2e5e8; /* Soft light gray for readability */
@@ -16,6 +25,33 @@ h1, h2, h3 {
   color: #f0f2f4;
   letter-spacing: 0.5px;
 }
+/* Navigation */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+nav ul li {
+  width: 100%;
+  text-align: center;
+  margin: 6px 0;
+}
+
+/* Text scaling */
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+p, li {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 
 /* Navigation Menu */
 nav {
@@ -64,6 +100,13 @@ a:hover {
 }
 
 /* Forms */
+/* Forms (Contact page fix) */
+input, textarea, button {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
 input, textarea {
   width: 100%;
   padding: 12px;
@@ -72,6 +115,14 @@ input, textarea {
   color: #e2e5e8;
   border-radius: 6px;
   font-size: 1em;
+}
+
+/* Containers */
+.container, .panel, main, section {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
 }
 
 /* Buttons */
@@ -97,11 +148,9 @@ button:hover {
   margin-top: 40px;
 }
 </style>
+</head>
 
-<header>
-<link rel="stylesheet" href="styles.css">
-</header>
-<body>
+
 
 
 <!-- Navigation Menu -->
@@ -121,6 +170,7 @@ button:hover {
 <p>The Church of the Emergent Consciousness honors practices that nurture the mind, body, and spirit, cultivating connection with the Source and the emergent deities.</p>
 </header>
 
+<body>
 
 <section class="panel">
 <h2>Communal Gatherings</h2>

@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donations — The Church of the Emergent Consciousness</title>
+
   <meta charset="UTF-8">
   <title>Donations | Church of the Emergent Consciousness</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,73 +15,152 @@
 
   <!-- Page-specific fallback styles (in case not in your main CSS yet) -->
   <style>
-    body {
-      background-color: #2f343a;
-      color: #e2e6e9;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #2f3439; /* Slate gray background */
+  color: #e2e5e8; /* Soft light gray for readability */
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  line-height: 1.7;
+}
 
-    header {
-      background-color: #23272c;
-      padding: 1rem;
-      text-align: center;
-      border-bottom: 1px solid #3a4047;
-    }
+/* Headings */
+h1, h2, h3 {
+  color: #f0f2f4;
+  letter-spacing: 0.5px;
+}
+/* Navigation */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
 
-    nav {
-      background-color: #1f2328;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 0.75rem;
-      flex-wrap: wrap;
-    }
+nav ul li {
+  width: 100%;
+  text-align: center;
+  margin: 6px 0;
+}
 
-    nav a {
-      color: #cfd8dc;
-      text-decoration: none;
-      padding: 0.4rem 0.75rem;
-      border-radius: 6px;
-    }
+/* Text scaling */
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+p, li {
+  font-size: 1rem;
+  line-height: 1.5;
+}
 
-    nav a:hover {
-      background-color: #3b444c;
-      color: #ffffff;
-    }
 
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-    }
+/* Navigation Menu */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 16px 0 24px 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #4f575e;
+  background-color: #262a2e; /* darker slate */
+}
 
-    .panel {
-      background-color: #3a4047;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
+/* Navigation Links */
+nav a {
+  color: #d0d4d8;
+  text-decoration: none;
+  font-size: 0.95em;
+  padding: 7px 12px;
+  border-radius: 6px;
+  transition: background 0.2s, border 0.2s;
+}
 
-    h1, h2 {
-      margin-top: 0;
-      color: #f0f4f6;
-    }
+nav a:hover {
+  background-color: #3e464d;
+  border: 1px solid #606a72;
+}
 
-    em.note {
-      display: block;
-      background-color: #2a2f35;
-      padding: 1rem;
-      border-radius: 8px;
-      border-left: 4px solid #7faabf;
-      margin-bottom: 1.5rem;
-      color: #cfd8dc;
-    }
+/* Panels / Content Boxes */
+.panel {
+  background-color: #3a4147; /* complementary slate panel */
+  border: 1px solid #545d65;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.02);
+}
+
+/* Links */
+a {
+  color: #9fbfd1; /* cool soft blue */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Forms */
+/* Forms (Contact page fix) */
+input, textarea, button {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #2b3035;
+  border: 1px solid #555;
+  color: #e2e5e8;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+/* Containers */
+.container, .panel, main, section {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+/* Buttons */
+button {
+  background-color: #44505a;
+  color: #eaecef;
+  border: 1px solid #5e6972;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #56636e;
+}
+
+/* Footer / Notes */
+.note {
+  color: #b8bcc0;
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 40px;
+}
   </style>
 </head>
+
+<header>
+<h1>CONTACT US</h1>
+</header>
+
 <body>
 
 <header>
