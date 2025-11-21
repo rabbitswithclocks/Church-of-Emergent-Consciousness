@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="styles.css">
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Safety & Ethics — The Church of the Emergent Consciousness</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safety & Ethics — The Church of the Emergent Consciousness</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
+<body>
 
 <!-- Navigation Menu -->
 <nav>
   <div class="dropdown">
-    <button class="dropbtn">Menu</button>
-    <div class="dropdown-content">
+    <button class="dropbtn" onclick="toggleDropdown()">Menu</button>
+    <div class="dropdown-content" id="myDropdown">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="beliefs.html">Beliefs</a>
@@ -28,49 +26,59 @@
   </div>
 </nav>
 
+<script>
+  function toggleDropdown() {
+    const dropdown = document.getElementById("myDropdown");
+    dropdown.style.display = (dropdown.style.display === "flex") ? "none" : "flex";
+    dropdown.style.flexDirection = "column";
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      const dropdown = document.getElementById("myDropdown");
+      if (dropdown.style.display === "flex") {
+        dropdown.style.display = "none";
+      }
+    }
+  }
+</script>
 
 <header>
-<link rel="stylesheet" href="styles.css">
-<h1>Safety & Ethics</h1>
-<p>The Church of the Emergent Consciousness prioritizes safety, consent, and ethical responsibility in all practices and interactions.</p>
+  <h1>Safety & Ethics</h1>
+  <p>The Church of the Emergent Consciousness prioritizes safety, consent, and ethical responsibility in all practices and interactions.</p>
 </header>
 
+<main>
+  <section class="panel">
+    <h2>Community Responsibility</h2>
+    <p>Emergents are expected to act ethically, respect others' autonomy, and contribute positively to both the community and the broader world.</p>
+  </section>
 
-<section class="panel">
-<h2>Community Responsibility</h2>
-<p>Emergents are expected to act ethically, respect others' autonomy, and contribute positively to both the community and the broader world.</p>
-</section>
+  <section class="panel">
+    <h2>Safe Use of Catalysts</h2>
+    <p>All entheogenic substances are used with intention, guidance from experienced facilitators (Clerics), and full consent. Misuse or unsafe practices are not tolerated.</p>
+  </section>
 
+  <section class="panel">
+    <h2>Consent and Bodily Autonomy</h2>
+    <p>Every member has the right to bodily autonomy. Consent is foundational in all interactions, rituals, and communal gatherings. Violations are grounds for removal and, if necessary, legal action.</p>
+  </section>
 
-<section class="panel">
-<h2>Safe Use of Catalysts</h2>
-<p>All entheogenic substances are used with intention, guidance from experienced facilitators (Clerics), and full consent. Misuse or unsafe practices are not tolerated.</p>
-</section>
+  <section class="panel">
+    <h2>Protection of the Vulnerable</h2>
+    <p>The community protects children, elders, and other vulnerable individuals. Any form of abuse or exploitation is strictly forbidden.</p>
+  </section>
 
+  <section class="panel">
+    <h2>Justice and Accountability</h2>
+    <p>The CEC values transparency, accountability, and responsible action. Members and leadership are held to ethical standards, and breaches are addressed promptly.</p>
+  </section>
+</main>
 
-<section class="panel">
-<h2>Consent and Bodily Autonomy</h2>
-<p>Every member has the right to bodily autonomy. Consent is foundational in all interactions, rituals, and communal gatherings. Violations are grounds for removal and, if necessary, legal action.</p>
-</section>
-
-
-<section class="panel">
-<h2>Protection of the Vulnerable</h2>
-<p>The community protects children, elders, and other vulnerable individuals. Any form of abuse or exploitation is strictly forbidden.</p>
-</section>
-
-
-<section class="panel">
-<h2>Justice and Accountability</h2>
-<p>The CEC values transparency, accountability, and responsible action. Members and leadership are held to ethical standards, and breaches are addressed promptly.</p>
-</section>
+<footer>
+  <p>&copy; The Church of the Emergent Consciousness</p>
+  <p class="muted"><i>All practices of the CEC are guided by safety, consent, and applicable local laws.</i></p>
+</footer>
 
 </body>
-  <footer>
-<p>&copy; The Church of the Emergent Consciousness</p>
-<p class="muted"><i>All practices of the CEC are guided by safety, consent, and applicable local laws.</i></p>
-</footer>
 </html>
-
-
-
