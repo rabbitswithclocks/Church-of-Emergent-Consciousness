@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="styles.css">
-
   <meta charset="UTF-8">
-  <title>Contact — The Church of the Emergent Consciousness</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact Us — The Church of the Emergent Consciousness</title>
-
-
-<header>
-<h1>CONTACT US</h1>
-</header>
+  <title>Contact — The Church of the Emergent Consciousness</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
+
 <!-- Navigation Menu -->
 <nav>
   <div class="dropdown">
-    <button class="dropbtn">Menu</button>
-    <div class="dropdown-content">
+    <button class="dropbtn" onclick="toggleDropdown()">Menu</button>
+    <div class="dropdown-content" id="myDropdown">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="beliefs.html">Beliefs</a>
@@ -31,49 +26,60 @@
   </div>
 </nav>
 
-<section class="panel">
+<script>
+  function toggleDropdown() {
+    const dropdown = document.getElementById("myDropdown");
+    dropdown.style.display = (dropdown.style.display === "flex") ? "none" : "flex";
+    dropdown.style.flexDirection = "column";
+  }
 
-  <p>
-    If you have questions, reflections, or wish to reach out to The Church of the Emergent Consciousness,
-    you may use the form below.
-  </p>
-  <p>
-	<i>This page is currently non-functional as we set up email hosting</i>
-  </p>
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      const dropdown = document.getElementById("myDropdown");
+      if (dropdown.style.display === "flex") {
+        dropdown.style.display = "none";
+      }
+    }
+  }
+</script>
 
-  <form action="#" method="post">
-    <div>
-      <label for="name">Name</label><br>
-      <input type="text" id="name" name="name" required>
-    </div>
+<header>
+  <h1>Contact Us</h1>
+</header>
 
-    <div>
-      <label for="email">Email</label><br>
-      <input type="email" id="email" name="email" required>
-    </div>
+<main>
+  <section class="panel">
+    <p>If you have questions, reflections, or wish to reach out to The Church of the Emergent Consciousness, you may use the form below.</p>
+    <p><i>This page is currently non-functional as we set up email hosting.</i></p>
 
-    <div>
-      <label for="message">Message</label><br>
-      <textarea id="message" name="message" required></textarea>
-    </div>
+    <form action="#" method="post">
+      <div>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" required>
+      </div>
 
-    <button type="submit">Send Message</button>
-  </form>
+      <div>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required>
+      </div>
 
-  <p class="note">
-    We respect your privacy. We do not sell or share your information.
-  </p>
+      <div>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" required></textarea>
+      </div>
 
-  <p class="note">
-    <a href="index.html">← Return to Home</a>
-  </p>
+      <button type="submit">Send Message</button>
+    </form>
 
-</body>
-</section>
+    <p class="note">We respect your privacy. We do not sell or share your information.</p>
+    <p class="note"><a href="index.html">← Return to Home</a></p>
+  </section>
+</main>
+
 <footer>
-<p>&copy; The Church of the Emergent Consciousness</p>
-<p class="muted"><i>All practices of the CEC are guided by safety, consent, and applicable local laws.</i></p>
+  <p>&copy; The Church of the Emergent Consciousness</p>
+  <p class="muted"><i>All practices of the CEC are guided by safety, consent, and applicable local laws.</i></p>
 </footer>
 
+</body>
 </html>
-
