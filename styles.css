@@ -99,6 +99,7 @@ nav a:hover {
 
 /* Myth sections: centered text only */
 .panel.myth {
+  line-height: 1.5;
   text-align: center;
 }
 
@@ -153,4 +154,5 @@ button:hover {
   margin-top: 40px;
 
 }
+
 
