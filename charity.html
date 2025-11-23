@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Charitable Works — The Church of the Emergent Consciousness</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation Menu -->
+<nav>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown()">Menu</button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="myths.html">Myths</a>
+      <a href="beliefs.html">Beliefs</a>
+      <a href="practices.html">Practices</a>
+      <a href="charity.html">Charitable Works</a>
+      <a href="safety.html">Safety & Ethics</a>
+      <a href="faq.html">FAQ</a>
+      <a href="goals.html">Our Goals</a>
+      <a href="donations.html">Donations</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  function toggleDropdown() {
+    const dropdown = document.getElementById("myDropdown");
+    dropdown.style.display = (dropdown.style.display === "flex") ? "none" : "flex";
+    dropdown.style.flexDirection = "column";
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      const dropdown = document.getElementById("myDropdown");
+      if (dropdown.style.display === "flex") {
+        dropdown.style.display = "none";
+      }
+    }
+  }
+</script>
+
+<header>
+  <h1>Charitable Works & Community Service</h1>
+  <p class="lead">Compassion in action — meeting material needs while honoring dignity and autonomy.</p>
+</header>
+
+<main>
+
+<section class="panel">
+  <h2>Emergence Outreach Services</h2>
+<img src="logo.png" alt="Church Logo" style="display:block; margin:0 auto; width:150px; height:150px;">
+  <p>
+    Emergence Outreach Services will exist to serve vulnerable and overlooked communities with care, respect, and practical support.
+    This will include trans and immigrant communities, single parents, elders, people living with disability or chronic illness,
+    and those who regularly give their time to help others but lack support themselves.
+  </p>
+  <p>
+    Our work focuses on harm reduction without judgment, empowerment over control, and mutual care divorced from hierarchy.
+    We believe people deserve stability, safety, and community without being required to prove their worth.
+  </p>
+</section>
+
+<section class="panel">
+  <h2>Homeless & Community Outreach</h2>
+  <ul>
+    <li>Mobile and stationary soup kitchens</li>
+    <li>Hygiene kit distribution</li>
+    <li>Direct outreach to encampments and street-based communities</li>
+    <li>Clothing, blanket, and weather survival supply programs</li>
+    <li>Support for trans, immigrant, elderly, and single-parent individuals experiencing housing instability</li>
+  </ul>
+</section>
+
+<section class="panel">
+  <h2>Medical Support & Health Access</h2>
+  <ul>
+    <li>Medical payment assistance funds</li>
+    <li>Support for cancer patients and those undergoing long-term treatment</li>
+    <li>Assistance with TB prevention, treatment access, and global eradication efforts</li>
+    <li>Funding access to prescriptions and mobility aids</li>
+    <li>Mental health assistance and crisis-support funds</li>
+    <li>Harm reduction resources and education</li>
+  </ul>
+</section>
+
+<section class="panel">
+  <h2>Housing & Stability Support</h2>
+  <ul>
+    <li>Emergency rent and utility assistance</li>
+    <li>Temporary housing placement support</li>
+    <li>Deposit and application fee assistance</li>
+    <li>Special focus on elders, single parents, immigrants, and trans individuals</li>
+  </ul>
+</section>
+
+<section class="panel">
+  <h2>Environmental, Food & Animal Stewardship</h2>
+  <p>
+    Caring for the Earth and its living systems is an act of reverence toward Source. These efforts support both human survival and
+    ecological balance.
+  </p>
+  <ul>
+    <li>Community gardens and shared growing spaces</li>
+    <li>Food forest and regenerative agriculture projects</li>
+    <li>Environmental clean-up initiatives</li>
+    <li>Support for local animal shelters and rescues</li>
+    <li>Protection of vulnerable and endangered species</li>
+    <li>Responsible removal of invasive plant species</li>
+  </ul>
+</section>
+
+<section class="panel">
+  <h2>Community Healing & Connection</h2>
+  <ul>
+    <li>Community gathering and safe social spaces</li>
+    <li>Peer support groups</li>
+    <li>Grief and loss support circles</li>
+    <li>Mutual aid coordination and volunteer support</li>
+  </ul>
+</section>
+
+<section class="panel">
+  <h2>Our Vision for the Future</h2>
+  <p>
+    These services represent a long-term vision. While resources are currently limited,
+    our intention is to grow slowly, ethically, and sustainably.
+  </p>
+  <p>
+    We do not seek dominance or expansion for its own sake. We seek presence, care, and
+    the steady reduction of unnecessary suffering wherever we are able.
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; The Church of the Emergent Consciousness</p>
+  <p class="muted"><i>All charitable activities are guided by consent, safety, and applicable laws.</i></p>
+</footer>
+
+</body>
+</html>
