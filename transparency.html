@@ -1,3 +1,52 @@
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="logosmall.png">
+  <link rel="shortcut icon" type="image/png" href="logosmall.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Transparency — The Church of the Emergent Consciousness</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation Menu -->
+<nav>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown()">Menu</button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="myths.html">Myths</a>
+      <a href="beliefs.html">Beliefs</a>
+      <a href="practices.html">Practices</a>
+      <a href="charity.html">Charitable Works</a>
+      <a href="safety.html">Safety & Ethics</a>
+      <a href="faq.html">FAQ</a>
+      <a href="goals.html">Our Goals</a>
+      <a href="donations.html">Donations</a>
+      <a href="transparency.html">Transparency</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  function toggleDropdown() {
+    const dropdown = document.getElementById("myDropdown");
+    dropdown.style.display = (dropdown.style.display === "flex") ? "none" : "flex";
+    dropdown.style.flexDirection = "column";
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      const dropdown = document.getElementById("myDropdown");
+      if (dropdown.style.display === "flex") {
+        dropdown.style.display = "none";
+      }
+    }
+  }
+</script>
+
 <header>
   <h1>Financial Transparency</h1>
   <img src="logo.png" alt="Church Logo" style="display:block; margin:0 auto; width:150px; height:150px;">
